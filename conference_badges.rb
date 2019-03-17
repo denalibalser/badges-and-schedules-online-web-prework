@@ -18,10 +18,12 @@ def assign_rooms(attendees)
   return rooms
 end
 
-def assign_rooms(attendee)
+def assign_rooms(attendees)
   rooms=[]
-  attendee.each_with_index{|attendee,index|
-  rooms.push("Hello, #{attendee}! You'll be assigned to room #{index + 1}!")
+  attendees.each_with_index{|attendee,index|
+  rooms.push("Hello, #{attendees}! You'll be assigned to room #{index + 1}!")
    }
    return rooms
 end
+
+def printer(attendees)
