@@ -18,11 +18,10 @@ def assign_rooms(attendees)
   return rooms
 end
 
-def assign_rooms(speakers)
+def assign_rooms(attendee)
   assign=[]
-
-  speakers.each_with_index{|speaker,index|
-  assign.push("Hello, #{speaker}! You'll be assigned to room #{index + 1}!")
+  attendee.each_with_index{|attendee,index|
+  assign.push("Hello, #{attendee}! You'll be assigned to room #{index + 1}!")
    }
    return assign
 end
